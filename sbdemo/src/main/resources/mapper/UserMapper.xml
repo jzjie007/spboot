@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jzj.sbdemo.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.jzj.sbdemo.domain.User">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="safe" jdbcType="BIT" property="safe"/>
+    </resultMap>
+
+    <!--<select id="select" resultMap="BaseResultMap" parameterType="java.lang.Integer">-->
+    <select id="select" resultType="com.jzj.sbdemo.domain.User" parameterType="java.lang.Integer">
+        select * from test.user
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <update id="updateUser" parameterType="com.jzj.sbdemo.domain.User">
+        update test.user
+        <set>
+            <if test="id != null">
+                `id` = #{id,jdbcType=INTEGER},
+            </if>
+            <if test="userName != null">
+                user_name = #{userName,jdbcType=CHAR},
+            </if>
+            <if test="password != null">
+                password = #{password,jdbcType=CHAR},
+            </if>
+            <if test="safe != null">
+                safe = #{safe,jdbcType=BIT},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+
+    <insert id="insert" parameterType="com.jzj.sbdemo.domain.User" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into test.user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                `id`,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+            <if test="safe != null">
+                safe,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="userName != null">
+                #{userName,jdbcType=CHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=CHAR},
+            </if>
+            <if test="safe != null">
+                #{safe,jdbcType=BIT},
+            </if>
+        </trim>
+    </insert>
+</mapper>

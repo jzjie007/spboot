@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5e762e8-3aaf-4c7c-abb8-af2f303dce5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_3_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_1_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_1_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/controller/TkUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/dao/BaseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/service/ITkUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/service/TkUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkdemo/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkdemo/src/main/resources/generator/old_generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tkdemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/TkdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/TkdemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkdemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tkdemo/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="f5e762e8-3aaf-4c7c-abb8-af2f303dce5b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/sbdemo/target/" />
     <ignored path="$PROJECT_DIR$/safedemo/target/" />
     <ignored path="$PROJECT_DIR$/tkdemo/target/" />
@@ -139,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/TkdemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="136">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -155,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/dao/UserPOMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/dao/BaseMapper.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/base/BaseMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="55">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -432,7 +410,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554395990764" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554396075013" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -510,18 +488,17 @@
       <workItem from="1554173526023" duration="18000" />
       <workItem from="1554206615668" duration="9705000" />
       <workItem from="1554297729583" duration="7357000" />
-      <workItem from="1554390669459" duration="3944000" />
+      <workItem from="1554390669459" duration="4252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21291000" />
+    <option name="totallyTimeSpent" value="21599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2832618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2832618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -531,13 +508,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5266419" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.535316" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44237918" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30731103" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.6641883" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -831,17 +808,7 @@
     <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/dao/UserPOMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/dao/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -850,8 +817,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/TkdemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkdemo/src/main/java/com/jzj/tkdemo/base/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

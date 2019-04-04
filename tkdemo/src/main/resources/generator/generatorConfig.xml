@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <properties resource="application.properties"/>
+
+    <context defaultModelType="flat" id="mysql" targetRuntime="MyBatis3Simple">
+        <!-- 生成的Java文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+
+        <!-- 生成根Mapper 所有的Mappwe都 继承这个 根   -->
+        <!-- 这个地方 注意一下 ， 和你配置的 Application上面 MapperScan 的 mapper包扫描 不要再一个文件夹下，
+        比如我的 我的包扫描是 @MapperScan("com.jzj.tkdemo.dao") 这个地方是 其他的包
+        总而言之就是  BaseMapper 不要放在Mapper的 包扫描中， 具体原因看 下面介绍
+        -->
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.jzj.tkdemo.domain.base.BaseMapper"/>
+        </plugin>
+
+
+        <jdbcConnection
+                driverClass="${spring.datasource.driver-class-name}"
+                connectionURL="${spring.datasource.url}"
+                userId="${spring.datasource.username}"
+                password="${spring.datasource.password}">
+        </jdbcConnection>
+
+        <!-- 生成的数据库实体 PO 所在位置 -->
+        <javaModelGenerator targetPackage="com.jzj.tkdemo.domain.po"
+                            targetProject="src/main/java">
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- MAPPER XML java 文件所在位置-->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="src/main/resources">
+        </sqlMapGenerator>
+
+        <!-- Mapper.java 所在的文件夹，也就是mapper接口 文件夹
+            1，ANNOTATEDMAPPER：会生成使用Mapper接口+Annotation的方式创建（SQL生成在annotation中），不会生成对应的XML；
+            2，XMLMAPPER：会生成Mapper接口，接口完全依赖XML；
+            3.这个包是 com.jzj.tkdemo.dao  不要把上面的BaseMapper 放在下面 切记切记
+        -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.jzj.tkdemo.dao"
+                             targetProject="src/main/java">
+        </javaClientGenerator>
+
+
+        <!-- user 是数据库表， UserPO 是你根据报表 要生成的 实体类-->
+        <table schema="" tableName="user" domainObjectName="UserPO"></table>
+
+    </context>
+</generatorConfiguration>
